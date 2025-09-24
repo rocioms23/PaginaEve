@@ -4,10 +4,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Ahora puedes acceder a los elementos del DOM, como el botón
     const boton = document.getElementById('boton_reiniciar');
+    imagenBoton = document.getElementById('imagen_boton')
     if (boton) {
         // También puedes poner aquí el listener del botón
         boton.addEventListener('click', () => {
             actualizarNumeros();
+            imagenBoton.src ="./static/assets/botonReiniciar.png"
         });
     }
 });
